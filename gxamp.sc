@@ -1,11 +1,11 @@
-FaustAmp : UGen
+FaustAmp2 : UGen
 {
-  *ar { | in1, out_master(0.0) |
-      ^this.multiNew('audio', in1, out_master)
+  *ar { | in1, pregain(-6.0), gain1(-6.0) |
+      ^this.multiNew('audio', in1, pregain, gain1)
   }
 
-  *kr { | in1, out_master(0.0) |
-      ^this.multiNew('control', in1, out_master)
+  *kr { | in1, pregain(-6.0), gain1(-6.0) |
+      ^this.multiNew('control', in1, pregain, gain1)
   } 
 
   checkInputs {
@@ -20,7 +20,7 @@ FaustAmp : UGen
     ^this.checkValidInputs
   }
 
-  name { ^"FaustAmp" }
+  name { ^"FaustAmp2" }
 
 
   info { ^"Generated with Faust" }
