@@ -3,7 +3,9 @@
 
 # faust-guitarix-sc37
 
-Guitarix effects in Super Collider. This has only been tested on SuperCollider 3.7.0 in Ubuntu 17.10
+Guitarix effects in Super Collider. This will work on SuperCollider 3.7 and 3.8
+
+For Supercollider 3.10 go here: https://github.com/gabrielsanchez/guitarix-supercollider
 
 ## Installation
 
